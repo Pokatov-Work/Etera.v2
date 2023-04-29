@@ -34,13 +34,14 @@ class AdminPanel
 
         $this->user = Auth::user();
 
-//        $this->profile = $this->profile();
+        $this->profile = $this->profile();
         $this->menu = $this->mainMenu();
     }
 
     private function profile()
     {
 //        return auth()->user()->loadMissing(['roles']);
+        return auth()->user();
     }
 
     private function mainMenu(): Collection

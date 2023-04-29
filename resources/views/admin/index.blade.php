@@ -7,11 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Etera</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-<div id="admin">
-<h1>Hello</h1>
+<div id="app">
+    <my-test></my-test>
 </div>
+
+
 </body>
 </html>
 <?php

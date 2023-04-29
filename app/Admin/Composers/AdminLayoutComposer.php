@@ -28,7 +28,7 @@ class AdminLayoutComposer
      */
     public function compose(View $view)
     {
-//        $view->with('profile', $this->adminPanel->profile);
+        $view->with('profile', $this->adminPanel->profile);
         $view->with('mainMenu', $this->adminPanel->menu);
         $view->with('adminLayout', $this->adminPanel);
     }
